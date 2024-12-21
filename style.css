@@ -1,0 +1,98 @@
+/* General Styles */
+body {margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #ffffff;
+      color: #333;}
+
+h1, h2 {color: #ffffff;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        text-align: center;}
+
+p {font-size: 16px;
+   color: #ffffff;
+   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);}
+
+
+.header {background-color: #0056b3;
+         color: white;
+         padding: 20px 0;
+         text-align: center;
+         font-size: 36px;
+         font-weight: bold;
+         border-bottom: 2px solid #003d80;}
+
+
+.news-banner {position: relative;
+              overflow: hidden;
+              background-color: #e8f4ff;
+              height: 50px;
+              border-bottom: 1px solid #ddd;}
+
+.news-slider {display: flex;
+              white-space: nowrap;
+              animation: slide 12s linear infinite;}
+
+.news-item {padding: 0 20px;
+            font-size: 16px;
+            flex-shrink: 0;
+            color: #333;}
+
+@keyframes slide { 0% {transform: translateX(0);}
+                  100% {transform: translateX(-100%);} }
+
+
+.main-content {display: flex;
+               flex-direction: column;
+               align-items: center;
+               padding: 20px;
+               gap: 20px;
+               box-sizing: border-box;}
+.selector {width: 80%;
+           max-width: 900px;
+           min-height: 250px;
+           background-size: cover;
+           background-position: center center;
+           text-align: center;
+           padding: 20px;
+           border-radius: 10px;
+           background-color: lightgray;
+           color: white;
+           transition: transform 0.3s ease-in-out;}
+
+.selector:hover {transform: scale(1.05);}
+
+
+a.hover-btn {margin-top: 20px;
+             padding: 10px 20px;
+             font-size: 14px;
+             background-color: #0056b3;
+             color: white;
+             text-decoration: none;
+             border-radius: 5px;
+             display: inline-block;}
+
+a.hover-btn:hover {background-color: #003d80;}
+
+footer {background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;}
+
+footer a {color: #fff;
+          text-decoration: none;}
+
+footer a:hover {text-decoration: underline;}
+
+
+
+/
+@media screen and (max-width: 1024px) {
+       .main-content {width: 90%;}
+}
+
+@media screen and (max-width: 768px) {
+       .main-content {width: 80%;}
+}

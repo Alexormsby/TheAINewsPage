@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather News Project</title>
+    <link rel="stylesheet" href="Weather.css"> <!-- Make sure this path is correct -->
+</head>
+<body>
+    <header>
+        <a href="index.html" class="header-link">The AI News Page</a>
+    </header>
+    <input type="text" id="cityInput" name="cityInput" placeholder="Input City" />
+    <button onclick="fetchWeather()">Submit</button>
+    <h5 id="error"></h5>
+    <h3 id="city"></h3>
+    <div id="weather"></div>
+    
+    <script src="Weather.js"></script> <!-- Make sure this path is correct -->
+</body>
+</html>
